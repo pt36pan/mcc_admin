@@ -20,7 +20,7 @@ function initMenuEvent() {
     //仪表盘初始化
     addClickEvent($('#dash'),function () {
         $('.nav-item').children('ul').slideUp(300);
-        window.location = '/dash'
+        window.location = '/dashboard'
     });
 
     //产品中心 初始化
