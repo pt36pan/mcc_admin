@@ -22,6 +22,7 @@ class DashController extends Controller
 
     public function dash()
     {
+        //dash
         return view('admin.dash');
     }
 }
