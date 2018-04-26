@@ -1,0 +1,144 @@
+/* 大屏幕（大桌面显示器，大于等于 996px） */
+@media only screen and (min-width: 996px)  {
+    .content{
+        width: 45%;
+        height: 50%;
+    }
+    .content_item{
+        width: 50%;
+        height: 100%;
+    }
+    .login_content{
+        height: 60%;
+        -webkit-transform: translateY(33.3%);
+        -moz-transform: translateY(33.3%);
+        -ms-transform: translateY(33.3%);
+        -o-transform: translateY(33.3%);
+        transform: translateY(33.3%);
+    }
+}
+/* 中等屏幕（桌面显示器，768px ~ 996px） */
+@media only screen and (max-width: 996px) and (min-width: 768px) {
+    .content{
+        width: 45%;
+        height: 50%;
+    }
+    .content_item{
+        width: 50%;
+        height: 100%;
+    }
+    .login_content{
+        height: 60%;
+        -webkit-transform: translateY(33.3%);
+        -moz-transform: translateY(33.3%);
+        -ms-transform: translateY(33.3%);
+        -o-transform: translateY(33.3%);
+        transform: translateY(33.3%);
+    }
+}
+
+/* 小屏幕（平板，414px ~ 768px） */
+@media only screen and (max-width: 768px) and (min-width: 415px) {
+    .content{
+        width: 60%; height: 70%;
+        flex-direction: column;
+    }
+    .content_item{
+        width: 100%;
+        height: 50%;
+    }
+    .login_content{
+        height: 80%;
+        -webkit-transform: translateY(12.5%);
+        -moz-transform: translateY(12.5%);
+        -ms-transform: translateY(12.5%);
+        -o-transform: translateY(12.5%);
+        transform: translateY(12.5%);
+    }
+    #btn_login{width: 60% !important}
+}
+/* 超小屏幕（手机，小于等于 414px） */
+@media only screen and (max-width: 414px) {
+    .content{
+        width: 80%; height: 60%;
+        flex-direction: column;
+    }
+    .content_item{
+        width: 100%;
+        height: 50%;
+    }
+    .login_content{
+        height: 80%;
+        -webkit-transform: translateY(12.5%);
+        -moz-transform: translateY(12.5%);
+        -ms-transform: translateY(12.5%);
+        -o-transform: translateY(12.5%);
+        transform: translateY(12.5%);
+    }
+    #btn_login{width: 80% !important}
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    -webkit-box-shadow: 1px 1px 10px darkslategrey;
+    -moz-box-shadow: 1px 1px 10px darkslategrey;
+    box-shadow: 1px 1px 10px darkslategrey;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    justify-content: center;
+}
+.content_item{  }
+.logo{
+    background: #4876FFbb;
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-direction: column;
+    align-items: center;
+}
+.logo img{
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+}
+.login{
+    background: white;
+}
+.login_content{
+    width: 80%;
+    margin-left: 10%;
+    display:flex;
+    display: -webkit-flex; /* Safari */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#btn_login{
+    width: 100%;
+    border-radius: 2rem;
+    color: white;
+    background: #4876FF;
+    outline: none;
+}
+#btn_login:hover{
+    background: #4844FF;
+}
+#btn_forgot_password{
+    cursor: pointer;color: darkgray
+}
+#btn_forgot_password:hover{
+    color: #4876FF;
+}

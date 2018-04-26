@@ -1,0 +1,105 @@
+/*@charset "utf-8";*/
+/*!* 以下实际使用若已初始化可删除 .nav height父级需逐级设置为100%*!*/
+/*body,ul{margin:0;padding:0}*/
+/*body{font:14px "微软雅黑","宋体","Arial Narrow",HELVETICA;-webkit-text-size-adjust:100%;}*/
+/*li{list-style:none} */
+/*a{text-decoration:none;}*/
+/* 以上实际使用若已初始化可删除 */
+
+/* nav */
+.nav{ width: 100%; min-height: 100%;background: #3C474C;transition: all .3s;}
+.nav a{display: block;overflow: hidden;padding-left: 20px;line-height: 48px;max-height: 48px;color: white;transition: all .3s;}
+.nav a span{margin-left: 30px;}
+/*nav-top*/
+.nav-top{
+    width: 100%;
+    height: 15rem;
+    border-bottom:1px solid rgba(255,255,255,0.1)
+}
+.nav-top-info{
+    width: 70%;
+    height: 70%;
+    margin-left: 15%;
+}
+.nav-top-info img{
+    width: 70%;
+    margin-top: 0.5rem;
+    margin-left: 15%;
+    border-radius: 50%;
+}
+.nav-top-info span{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: 0.5rem;
+}
+/*mini*/
+#mini{
+    width: 100%;
+    height: 30%;
+    border-bottom:1px solid rgba(255,255,255,0.1)
+}
+.mini-logo-long{
+    width: 90%;
+    margin-left: 5%;
+    height: 50%;
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transform: translateY(50%);
+}
+.mini-logo{
+    width: 50%;
+    margin-left: 25%;
+    height: 50%;
+    -webkit-transform: translateY(50%);
+    -moz-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    -o-transform: translateY(50%);
+    transform: translateY(50%);
+}
+.nav-item{position: relative;}
+.nav-item.nav-show{border-bottom: none;}
+.nav-item ul{display: none;background: rgba(0,0,0,.1);}
+.nav-item.nav-show ul{display: block;}
+.nav-item>a:before{content: "";position: absolute;left: 0px;width: 4px;height: 48px;background: #4876FF;opacity:0;transition: all .3s;}
+/*.nav .nav-icon{font-size: 20px;position: absolute;margin-left:-1px;}*/
+/* 此处修改导航图标 可自定义iconfont 替换*/
+.iconfont{
+    font-size: 20px;
+    position: absolute;
+}
+/*---------------------*/
+.nav-more{float:right;margin-right: 20px;font-size: 12px;transition: transform .3s;}
+/* 此处为导航右侧箭头 如果自定义iconfont 也需要替换*/
+.nav-more::after{content: "\e621";}
+
+.nav-more-static{float:right;margin-right: 20px;font-size: 12px;transition: transform .3s;}
+.nav-more-static::after{content: "\e621";}
+
+.nav-more-add{float:right;margin-right: 23px;font-size: 12px;transition: transform .3s;text-align: left}
+.nav-more-add::after{content: "+";}
+/*---------------------*/
+.nav-show .nav-more{transform:rotate(90deg);}
+.nav-show,.nav-item>a:hover{color: #FFF;background:rgba(0,0,0,.1);}
+.nav-show>a:before,.nav-item>a:hover:before{opacity:1;}
+.nav-item li:hover a{color: #FFF;background: rgba(0, 0, 0,.1);}
+
+/* nav-mini */
+.nav-mini.nav{width: 100%;}
+/*.nav-mini.nav .nav-icon{!* margin-left:-2px; *!}*/
+.nav-mini.nav .nav-item>a span{display: none;}
+.nav-mini.nav .nav-more{margin-right: -20px;}
+.nav-mini.nav .nav-item ul{position: absolute;top:0px;left:100%;width: 160px;z-index: 99;background:#3C474C;overflow: hidden;}
+.nav-mini.nav .nav-item:hover{background:rgba(255,255,255,.1);}
+.nav-mini.nav .nav-item:hover .nav-item a{color:#FFF;}
+.nav-mini.nav .nav-item:hover a:before{opacity:1;}
+.nav-mini.nav .nav-item:hover ul{display: block;}
+
+/*.nav-mini.nav .nav-item li>a {border-bottom: solid 1px #4876FFAA}*/
+
+
+
+

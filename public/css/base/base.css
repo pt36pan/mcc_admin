@@ -1,0 +1,13 @@
+/*通用样式 写在这里*/
+
+
+
+
+
+/*下边框类*/
+.bottom_border{
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid lightgray;
+}
