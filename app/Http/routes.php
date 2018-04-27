@@ -19,6 +19,7 @@ Route::post('/doLogin',['uses'=>'UserController@doLogin']);
 
 Route::get('/dashboard',['uses'=>'DashController@dash']);
 
+Route::get('/purchase',function (){dd('purchase');});
 /*
 |--------------------------------------------------------------------------
 | Application Routes

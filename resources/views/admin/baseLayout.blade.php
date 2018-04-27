@@ -70,7 +70,7 @@
                     <a href="javascript:;"><i class="iconfont icon-bangzhuzixun"></i><span>客服系统</span><i class="my-icon nav-more"></i></a>
                 </li>
                 <li class="nav-item" id="systemSetting">
-                    <a href="javascript:;"><i class="iconfont icon-shezhi"></i><span>系统设置</span><i class="my-icon nav-more"></i></a>
+                    <a href="javascript:;"><i class="iconfont icon-shezhi"></i><span>系统设置Dev</span><i class="my-icon nav-more"></i></a>
                 </li>
             </ul>
         </div>
