@@ -36,7 +36,7 @@ function initMenuEvent() {
     //订单管理 初始化
     addClickEvent($('#purchase'),function () {
         $('.nav-item').children('ul').slideUp(300);
-        alert('purchase');
+        window.location = '/purchase'
     });
 
     //轮播图 初始化
