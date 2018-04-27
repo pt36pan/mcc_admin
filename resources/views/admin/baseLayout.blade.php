@@ -99,7 +99,7 @@
     <script type="text/javascript" src="{{URL::to('js/external/bootstrap.min.js')}}"></script>
     <script type="text/javascript" src="{{URL::to('js/external/navSide/nav.js')}}"></script>
     <script type="text/javascript" src="{{URL::to('js/admin/base.js')}}"></script>
-
+    @yield('script')
 </body>
 
 </html>

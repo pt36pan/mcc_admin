@@ -11,7 +11,9 @@
     <div>
         purchase
     </div>
+@stop
 
+{{--页面的js--}}
+@section('script')
     <script type="text/javascript" src="{{URL::to('js/admin/purchase.js')}}"></script>
-
 @stop

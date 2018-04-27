@@ -13,3 +13,8 @@
 
     </div>
 @stop
+
+{{--页面的js--}}
+@section('script')
+
+@stop
